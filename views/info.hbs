@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <img class="card-img-top" src="{{avatar}}" alt="Card image cap">
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Họ và tên: {{name}}</h5>
+        <p class="card-text">
+          Ngày sinh: {{dob}} <br>
+          Sở thích: {{hobby}} <br>
+          Công việc: {{job}} <br>
+          trạng thái: {{status}} <br>
+          Giá: {{price}} <br>
+        </p>
+      </div>
+    </div>
+    <form action="/book" method="post">
+      <div>
+        <button class="btn btn-primary" id="username" name="username" value={{username}}>Đặt lịch</button>
+        <button class="btn btn-primary" id="username" name="username" value={{username}}>Hủy lịch</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,138 @@
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <img class="card-img-bottom"
+                src="https://www.hcmus.edu.vn/images/2020/04/07/bn2.jpg" alt="Card image cap">
+        </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <p>
+            <h1 class="text-center" style="background-image: url('25-1536x1088.jpg');">
+                N22: #1 Cổng Thông Tin Chụp hình
+            </h1>
+            </p>
+        </div>
+        <p class="text-center">
+            <span style="font-family: arial, helvetica, sans-serif; font-size: 130%;"><em>N22 là cổng thông tin
+                    cung cấp các dịch vụ về chụp hình giá rẻ nhất hiện nay với nhiều khuyến mãi cực kì hấp dẫn.
+                    <br>Tất cả là vì album ảnh của bạn .</em></span>
+        </p>
+    </div>
+    <form action="/info" method="post">
+        <h1 class="text-center text-danger ">TOP THỢ CHỤP ẢNH</h1>
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="{{avatar3}}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="form-group">
+                        <h5 class="card-title ">Họ và tên: {{name3}}</h5>
+                    </div>
+                    <p class="card-text">
+                        Ngày sinh: {{dob3}} <br>
+                        Sở thích: {{hobby3}} <br>
+                        Công việc: {{job3}} <br>
+                        Trạng thái: {{status3}} <br>
+                    </p>
+                </div>
+                <div class="form-group text-right">
+                    <button type="submit" class="btn btn-success" id="fid" name="fid" value="3">Chi tiết</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="{{avatar4}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Họ và tên: {{name4}}</h5>
+                    <p class="card-text">
+                        Ngày sinh: {{dob4}} <br>
+                        Sở thích: {{hobby4}} <br>
+                        Công việc: {{job4}} <br>
+                        Trạng thái: {{status4}} <br>
+                    </p>
+                </div>
+                <div class="form-group text-right">
+                    <button type="submit" class="btn btn-success" id="fid" name="fid" value="4">Chi tiết</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="{{avatar5}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Họ và tên: {{name5}}</h5>
+                    <p class="card-text">
+                        Ngày sinh: {{dob5}} <br>
+                        Sở thích: {{hobby5}} <br>
+                        Công việc: {{job5}} <br>
+                        Trạng thái: {{status5}} <br>
+                    </p>
+                </div>
+                <div class="form-group text-right">
+                    <button type="submit" class="btn btn-success" id="fid" name="fid" value="5">Chi tiết</button>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-center text-danger ">TOP MẪU ẢNH</h1>
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="{{avatar3}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Họ và tên: {{name3}}</h5>
+                    <p class="card-text">
+                        Ngày sinh: {{dob3}} <br>
+                        Sở thích: {{hobby3}} <br>
+                        Công việc: {{job3}} <br>
+                        Trạng thái: {{status3}} <br>
+                    </p>
+                </div>
+                <div class="form-group text-right">
+                    <button type="submit" class="btn btn-success" id="fid" name="fid" value="3">Chi tiết</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="{{avatar4}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Họ và tên: {{name4}}</h5>
+                    <p class="card-text">
+                        Ngày sinh: {{dob4}} <br>
+                        Sở thích: {{hobby4}} <br>
+                        Công việc: {{job4}} <br>
+                        Trạng thái: {{status4}} <br>
+                    </p>
+                </div>
+                <div class="form-group text-right">
+                    <button type="submit" class="btn btn-success" id="fid" name="fid" value="4">Chi tiết</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="{{avatar5}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Họ và tên: {{name5}}</h5>
+                    <p class="card-text">
+                        Ngày sinh: {{dob5}} <br>
+                        Sở thích: {{hobby5}} <br>
+                        Công việc: {{job5}} <br>
+                        Trạng thái: {{status5}} <br>
+                    </p>
+                </div>
+                <div class="form-group text-right">
+                    <button type="submit" class="btn btn-success" id="fid" name="fid" value="5">Chi tiết</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="row form-group mx-auto">
+        <div class="card ">
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <!-- <button type="submit" class="btn btn-primary" name="register" id="register">Đăng kí                        
+                    </button> -->
+                    {{#section 'footer'}}
+                    <footer class="blockquote-footer">Author: <cite title="Source Title">Dinh Quang Duy</cite>
+                    </footer>
+                    {{/section}}
+                    {{{_sections.footer}}}
+                    {{!-- {{>(footerP)}} --}}
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>

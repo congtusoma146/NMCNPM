@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <img class="card-img-top" src="{{avatar}}" alt="Card image cap">
+        </div>
+    </div>
+    <form action="./update" method="post">
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Password" name="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="Name" >Họ và tên</label>
+                    <input type="text" class="form-control" id="Name" name="name" value="{{name}}">
+                </div>
+                <div class="form-group">
+                    <label for="Dob">Năm sinh</label>
+                    <input type="text" class="form-control" id="Dob" name="dob" value="{{dob}}">
+                </div>
+                <div class="form-group">
+                    <label for="Hobby">Sở thích</label>
+                    <input type="text" class="form-control" id="Hobby" name="hobby" value="{{hobby}}">
+                </div>
+                <div class="form-group">
+                    <label for="Job">Công việc</label>
+                    <input type="text" class="form-control" id="Job" name="job" value="{{job}}">
+                </div>
+                <div class="form-group">
+                    <label for="avatar">Avatar</label>
+                    <input type="text" class="form-control" id="avatar" name="avatar" placeholder="Nhập link avatar"
+                        value={{avatar}}>
+                </div>
+                <div>
+                    <p>Mục đích sử dụng của bạn là gì: </p>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="option" id="option1" value=1 checked>
+                    <label class="form-check-label" for="option1">
+                        Người dùng
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="option" id="option2" value=2>
+                    <label class="form-check-label" for="option2">
+                        Thợ chụp ảnh
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="option" id="option3" value=3>
+                    <label class="form-check-label" for="option3">
+                        Mẫu ảnh
+                    </label>
+                </div>
+                <div class="form-group text-right">
+                    <button type="submit" class="btn btn-warning" name="username" value={{username}}>Chỉnh sửa</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
